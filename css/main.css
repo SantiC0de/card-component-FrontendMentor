@@ -1,0 +1,134 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+:root{
+    --Darkcyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+    --Verydarkblue: hsl(212, 21%, 14%);
+    --Darkgrayishblue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+}
+
+.paragraph{
+    font-size: 14px;
+    color: var(--Darkgrayishblue);
+    padding: 2rem;
+    margin-bottom: 1rem;
+}
+
+.perfume{
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    color: var(--Darkgrayishblue);
+    padding: 2rem 0 1rem .4rem;
+}
+
+.main-title{
+    font-family: 'Fraunces', sans-serif;
+    font-size: 1.7rem;
+    padding: 1rem;
+}
+
+.green{
+    color: var(--Darkcyan);
+    font-size: 2rem;
+}
+
+h5{
+    text-decoration: line-through;
+    color: var(--Darkgrayishblue);
+}
+
+.btn{
+    background-color: var(--Darkcyan);
+    color: var(--White);
+    padding: 1rem 4.4rem;
+    display: flex;
+    margin: 1rem 0 .5rem 1rem;
+    border: none;
+    border-radius: 10px;
+}
+
+/*
+==============
+VERSION DESKTOP
+==============
+*/
+
+.img-container img{
+    width: 25rem;
+    height: 100%;
+    border-radius: 15px 0 0px 15px;
+
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--Cream);
+}
+
+.main{
+    margin-top: 5rem;
+    display: flex;
+    width: 660px;
+    background-color: var(--White);
+    border-radius: 15px;
+}
+
+
+.main-price{
+    display: flex;
+}
+
+.green{
+    padding-right: 1rem;
+}
+
+/*
+==============
+VERSION MOBILE
+==============
+*/
+
+
+@media(max-width:370px){
+    body{
+        flex-direction: column;
+    }
+
+    .img-container img{
+        width: 20rem;
+        border-radius: 15px 15px 0 0;
+
+    }
+    .main{
+        flex-direction: column;
+        width: 20rem;
+    }
+
+    .content-container{
+        padding-left: 1.4rem;
+        
+    }
+
+    .paragraph{
+        padding-left: 0;
+    }
+
+    .main-title{
+        padding-bottom: 1rem;
+    }
+
+    .main-title{
+        padding: 0 1rem 0;
+    }
+
+    .perfume{
+        padding: .8rem;
+    }
+
+}
